@@ -1,9 +1,11 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>links</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Links</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding>
+  <ion-list>
+    <app-link-item *ngFor="let link of links" [linkItem]="link"></app-link-item>
+  </ion-list>
 </ion-content>
